@@ -1,5 +1,5 @@
 .specials-section-container {
-    width: 85%;
+    width: 1024px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -30,11 +30,10 @@
     }
 
     .btn-menu {
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         font-size: smaller;
     }
 
-    
 }
 
 @media screen and (max-width: 852px) {

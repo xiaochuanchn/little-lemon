@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <HeaderElement />
+      <div style={{marginTop:'80px'}}>
       <Routes>
         <Route path = "/" element = {<Home />}/>
         <Route path = "about" element = {<About />}/>
@@ -21,6 +22,7 @@ function App() {
         <Route path = "orderonline" element = {<Order />}/>
         <Route path = "login" element = {<Login />}/>
       </Routes>
+      </div>
       <Footer />
     </>
   );

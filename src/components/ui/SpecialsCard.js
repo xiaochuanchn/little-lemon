@@ -11,21 +11,24 @@ const SpecialsCard = () => {
             title: "Greek Salad",
             price: "$12.99",
             description: "The famous Greek salad of crispy lettuce, peppers, olives and our Chicago styled feta cheese, garnished with crunchy garlic, rosemary croutons.",
-            order: "Order a delivery"
+            order: "Order a delivery",
+            id: 1
         },
         {
             image: bruschetta1,
             title: "Bruschetta",
             price: "$5.99",
             description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil; made perfect for an evening dinner.",
-            order: "Order a delivery"
+            order: "Order a delivery",
+            id: 2
         },
         {
             image: creme,
             title: "Lemon Dessert",
             price: "$5.00",
-            description: "This comes straight from Grandma's recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.Every last ingredient has been sourced.",
-            order: "Order a delivery"
+            description: "This comes straight from Grandma's recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.",
+            order: "Order a delivery",
+            id: 3
         }
     ]
 
@@ -36,7 +39,7 @@ const SpecialsCard = () => {
             const description = menu.description;
             const order = menu.order;
             return (
-                <div>
+                <li key={menu.id}>
                     <div className="special-card-container">
                         <div className="image-container">
                                 <img src={image} alt="Special dessert" />
@@ -55,16 +58,16 @@ const SpecialsCard = () => {
                             </NavLink>
                         </div>
                     </div>
-                </div>
+                </li>
             )
     })
 
 
   return (
     <div>
-      <div className="special-card">
+      <ul className="special-card">
         {specialMenusItems}
-      </div>
+      </ul>
     </div>
   )
 }
